@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Онлайн-магазин туалетной бумаги</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Каталог</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="blog.php">Отзывы</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="cart.html" id="cart-button">Корзина (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section id="catalog" class="section">
+        <div class="container">
+            <h2>Каталог</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="image/1.jpg" alt="Product 1">
+                    <h3>Мягкая туалетная бумага</h3>
+                    <p>Цена: 200 рублей</p>
+                    <button onclick="addToCart('Мягкая туалетная бумага', 200)">Купить</button>
+                </div>
+                <div class="product">
+                    <img src="image/2.jpg" alt="Product 2">
+                    <h3>Ультра-мягкая туалетная бумага</h3>
+                    <p>Цена: 300 рублей</p>
+                    <button onclick="addToCart('Ультра-мягкая туалетная бумага', 300)">Купить</button>
+                </div>
+                <div class="product">
+                    <img src="image/3.jpg" alt="Product 3">
+                    <h3>Туалетная бумага</h3>
+                    <p>Цена: 100 рублей</p>
+                    <button onclick="addToCart('Туалетная бумага', 100)">Добавить в корзину</button>
+                </div>
+                <div class="product">
+                    <img src="image/4.jpg" alt="Product 4">
+                    <h3>Подписка на годовой запас</h3>
+                    <p>Цена: 10000 рублей</p>
+                    <button onclick="addToCart('Подписка на годовой запас', 10000)">Добавить в корзину</button>
+                </div>
+                <!-- Добавьте больше товаров по аналогии -->
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Онлайн-магазин туалетной бумаги. Все права защищены.</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

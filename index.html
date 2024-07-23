@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-магазин туалетной бумаги</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Онлайн-магазин туалетной бумаги</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="blog.php">Отзывы</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                    <li><a href="cart.html" id="cart-button">Корзина (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about-me" class="section">
+            <div class="container">
+                <h2>Обо мне</h2>
+                <p>Привет! Меня зовут Леонтьев Глеб, я студент группы АА-23-08 в Российском государственном университете
+                    нефти и газа.</p>
+            </div>
+        </section>
+        <section id="about-site" class="section">
+            <div class="container">
+                <h2>О сайте</h2>
+                <p>Добро пожаловать в наш онлайн-магазин туалетной бумаги! Мы понимаем, как важна качественная туалетная
+                    бумага для вашего комфорта, и поэтому предлагаем вам только лучшие варианты. Наш ассортимент
+                    включает различные виды туалетной бумаги, чтобы каждый мог найти что-то по душе.</p>
+                <p>На нашем сайте вы найдете информацию о разных типах туалетной бумаги, сможете прочитать отзывы других
+                    пользователей, а также приобрести понравившиеся товары. Мы стремимся сделать ваш опыт покупки
+                    максимально удобным и приятным.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Онлайн-магазин туалетной бумаги. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator){
+            navigator.serviceWorker.register('sw.js', {scope:'/'});
+        }
+    </script>
+</body>
+
+</html>
